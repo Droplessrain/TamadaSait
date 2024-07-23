@@ -297,7 +297,8 @@
 		.img3 img{
 			width: 100%;
 			height: 100%;
-			object-fit: contain;
+			object-fit: cover; /* Заполняет контейнер, обрезая изображение по бокам */
+  			object-position: center;
 		}
 	#up{
 		cursor:pointer;
@@ -310,46 +311,46 @@
 		}
 
 	.big2{
-	text-transform:uppercase;
-	letter-spacing:0px;		
-	color:#fbb631;
-	font-family:Bahnschrift Condensed;
-	font-size:9vw;
-	text-shadow:#000 5px 5px 6px;	
+		text-transform:uppercase;
+		letter-spacing:0px;		
+		color:#fbb631;
+		font-family:Bahnschrift Condensed;
+		font-size:9vw;
+		text-shadow:#000 5px 5px 6px;	
 	}
 	.t1{
-	margin-top:-620px;
-	width:55%;
-	position:relative;		
+		margin-top:-620px;
+		width:55%;
+		position:relative;		
 	}
 	.glavn2{
-	text-transform:uppercase;
-	letter-spacing:0%;
-	color:rgb(255, 255, 255);
-	text-shadow: #000 6px 6px 7px;
-	font-family:Bahnschrift Condensed;
-	font-size:4.5vw;
-	margin-top:1%;
-	margin-left:13%;	
+		text-transform:uppercase;
+		letter-spacing:0%;
+		color:rgb(255, 255, 255);
+		text-shadow: #000 6px 6px 7px;
+		font-family:Bahnschrift Condensed;
+		font-size:4.5vw;
+		margin-top:1%;
+		margin-left:13%;	
 	}
 	.menu{
-	Z-index:2;	
-    position: fixed;
-    right: 0px; 
-    top: 0%;
-    padding: 1%;
-    background: #000; 
-    border: 0px;   
-	font-size : 1.5vh; 
-	color : white;
-	width: 105%;
-	height: 3vw;
+		Z-index:2;
+		position: fixed;
+		    right: 0px; 
+		    top: 0%;
+		    padding: 1%;
+		    background: #000;
+		    border: 0px;   
+		font-size : 1.5vh; 
+		color : white;
+		width: 105%;
+		height: 3vw;
 	}
 	.none{
-	display: none;	
+		display: none;	
 	}
 	.be{
-	display:grid;	
+		display:grid;	
 	}
 	.soc{
 		position:absolute;
@@ -417,13 +418,13 @@
 		margin-left: 1vw;
 	}
 	.glavn{
-	text-transform:uppercase;
-	letter-spacing:0px;
-	font-family:Bahnschrift Condensed;
-	font-size:6.6vw;
+		text-transform:uppercase;
+		letter-spacing:0px;
+		font-family:Bahnschrift Condensed;
+		font-size:6.6vw;
 	}
 	i{
-	font-size:20px;	
+		font-size:20px;	
 	}
 	.boxUp{
 		box-shadow:2px 1px 3px #fbb631;
@@ -473,22 +474,22 @@
 		padding-bottom:30px;
 	}
 	.foto{
-	display:flex;
-	width:90%;	
+		display:flex;
+		width:90%;	
 	}
 	.string{
-	width:90%;	
+		width:90%;	
 	}
 	.imgInTable1{
-	width:18vw;
-	height:13vw;
-	box-shadow: 6px 9px 25px #77A;
-	padding:10px;
-	transition:2s;
+		width:18vw;
+		height:13vw;
+		box-shadow: 6px 9px 25px #77A;
+		padding:10px;
+		transition:2s;
 	}
 	img.imgInTable1:hover {
-	transform: rotate(0deg) scale(1.40);
-	transition: 1s;
+		transform: rotate(0deg) scale(1.40);
+		transition: 1s;
 	}
 
 /* Слайдер */
