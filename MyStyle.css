@@ -80,10 +80,16 @@
 	margin-left:15.5%;
 	}
 	.img3{
-		width:105%;
-		max-width: 100%; 
+		width: 100%;
+		height: auto;
+		overflow: hidden;
 		display: block;
 		Z-index:1;
+	}
+	.img3 img{
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
 	}
 	.big2{
 	text-transform:uppercase;
