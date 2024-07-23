@@ -288,14 +288,14 @@
 			width:70px;	
     		}
 		.img3{
-			height: 500px;
+			height: 100%;
 			overflow: hidden;
 			Z-index:1;
 			position: relative;
 		}
 		.img3 img{
 			width:auto;
-			height: 500px;
+			height: 100%;
 			object-position: center;
 			object-fit: cover;
 			  position: absolute;
