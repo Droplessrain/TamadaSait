@@ -1,41 +1,41 @@
 	html{
-	overflow-x:hidden;	
+		overflow-x:hidden;	
 	}
 	.z{
-	Z-index:1;	
+		Z-index:1;	
 	}
 	.be{
-	display: none;	
+		display: none;	
 	}
 	body {background-color:#ffF}
 	.menu {
-	Z-index:2;	
-    position: fixed;
-    right: 0px; 
-    top: 0%;
-    padding-top: 0.5%;
-	padding-bottom:1.4%;
-    background: #000; 
-    border: 0px;   
-	font-size : 1.5vw; 
-	color : white;
-	width: 105%;
-	display: inline;
-	height:1.4vw;
-    }
+	    Z-index:2;	
+	    position: fixed;
+	    right: 0px; 
+	    top: 0%;
+	    padding-top: 0.5%;
+            padding-bottom:1.4%;
+   	    background: #000; 
+   	    border: 0px;   
+		font-size : 1.5vw; 
+		color : white;
+		width: 100%;
+		display: inline;
+		height:1.4vw;
+	    }
 	.pointer{
-	cursor:pointer;
-    color:yellow;	
+		cursor:pointer;
+    		color:yellow;	
 	}
 	#up{
-	cursor:pointer;
-    position: fixed;
-    right: 2%; 
-    top: 80%;
-    padding: 1%;
-	font-size : 30%; 
-	transition: 1.3s;
-    }
+		cursor:pointer;
+		position: fixed;
+		right: 2%; 
+		top: 80%;
+		padding: 1%;
+		font-size : 30%; 
+		transition: 1.3s;
+    	}
 	#up img{
 	height:8vw;
 	width:8vw;
@@ -80,9 +80,11 @@
 	margin-left:15.5%;
 	}
 	.img3{
-	width:101.55%;
-	margin-left:-1%;
-	Z-index:1;
+		width:105%;
+		margin-left:-1%;
+		max-width: 100%; 
+		display: block;
+		Z-index:1;
 	}
 	.big2{
 	text-transform:uppercase;
