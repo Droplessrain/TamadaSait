@@ -292,13 +292,12 @@
 			Z-index:1;
 		}
 		.img3 img{
+			display:block;
 			height:700px;
 			min-width:1400px;
 			  object-fit: cover;
 			  object-position: center;
 			  position: absolute;
-			  top: 0;
-			  left: 0;
 		}
 	#up{
 		cursor:pointer;
