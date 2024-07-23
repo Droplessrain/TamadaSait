@@ -293,7 +293,7 @@
 			  position: relative;
 			Z-index:1;
 			background-position: calc(100% - 1100px) 0;
-			background-image: url(3.JPG);
+			background-image: url('3.JPG');
 		}
 		.img3 img{
 			width: 100%;
@@ -361,7 +361,8 @@
 	}
 	.soc{
 		position:absolute;
-		margin-top:-90px;
+		margin-top: 0px;
+		Z-index: 2;
 	}
 	.soc img{	
 		transition:1s;
