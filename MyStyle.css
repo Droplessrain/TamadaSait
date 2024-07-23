@@ -288,6 +288,7 @@
     		}
 		.img3{
 			  height:700px;
+			position: relative;
 			  overflow: hidden;
 			Z-index:1;
 		}
