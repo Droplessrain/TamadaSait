@@ -290,7 +290,6 @@
 		.img3{
 			height: 500px;
 			overflow: hidden;
-			display: block;
 			Z-index:1;
 		}
 		.img3 img{
