@@ -9,7 +9,7 @@
 	}
 	body {background-color:#ffF}
 	.menu {
-	    Z-index:2;	
+	    Z-index:2;
 	    position: fixed;
 	    right: 0px; 
 	    top: 0%;
@@ -296,19 +296,7 @@
 		font-size : 30%; 
 		transition: 1.3s;
 		}
-	.img3{
-		width: 105%;
-		max-width:480px;
-		height: auto;
-		overflow: hidden;
-		display: block;
-		Z-index:1;
-	}
-	.img3 img{
-		width: 100%;
-		height: 100%;
-		object-fit: contain;
-	}
+
 	.big2{
 	text-transform:uppercase;
 	letter-spacing:0px;		
