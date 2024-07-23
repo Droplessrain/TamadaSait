@@ -284,9 +284,20 @@
 		  
 	
 		#up img{
-		height:70px;
-		width:70px;	
-    }
+			height:70px;
+			width:70px;	
+    		}
+		.img3{
+			height: 100%;
+			overflow: hidden;
+			display: block;
+			Z-index:1;
+		}
+		.img3 img{
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
 	#up{
 		cursor:pointer;
 		position: fixed;
