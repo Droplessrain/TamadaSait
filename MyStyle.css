@@ -25,7 +25,8 @@
 	    }
 	.pointer{
 		cursor:pointer;
-    		color:yellow;	
+    		color:yellow;
+		margin-left:1vw;
 	}
 	#up{
 		cursor:pointer;
