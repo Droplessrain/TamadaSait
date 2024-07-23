@@ -292,7 +292,7 @@
 			Z-index:1;
 		}
 		.img3 img{
-			max-height: 700px;
+			width:1400px;
 			  object-fit: cover;
 			  object-position: center;
 			  position: absolute;
