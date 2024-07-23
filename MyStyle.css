@@ -37,47 +37,47 @@
 		transition: 1.3s;
     	}
 	#up img{
-	height:8vw;
-	width:8vw;
+		height:8vw;
+		width:8vw;
 	}
 	#up:hover{
-	transform:scale(0.8);
-	transition:1s;
+		transform:scale(0.8);
+		transition:1s;
 	}
 	.mistake{
-	margin-top:-28.0vh;
+		margin-top:-28.0vh;
 	}
 	.t1{
-	margin-top:-52.5%;
-	width:50%;
-	position:relative;
+		margin-top:-52.5%;
+		width:50%;
+		position:relative;
 	}
 	.soc img:hover{
-	transform:scale(0.9);
-	transition:1s;	
+		transform:scale(0.9);
+		transition:1s;	
 	}
 	.inst{	
-	transition:1s;
-	position:absolute;
-	margin-top:-47.5%;
-	margin-left:0%;
-	width:6.15vw;
-	height:6.15vw;
+		transition:1s;
+		position:absolute;
+		margin-top:-47.5%;
+		margin-left:0%;
+		width:6.15vw;
+		height:6.15vw;
 	}
 	.tele{
-	transition:1s;
-	position:absolute;
-	margin-top:-47.3%;
-	margin-left:7%;
-	width:6.0vw;
-	height:6.0vw;
+		transition:1s;
+		position:absolute;
+		margin-top:-47.3%;
+		margin-left:7%;
+		width:6.0vw;
+		height:6.0vw;
 	}
 	.odn{
-	transition:1s;
-	position:absolute;
-	height:5.9vw;
-	margin-top:-50.0%;
-	margin-left:15.5%;
+		transition:1s;
+		position:absolute;
+		height:5.9vw;
+		margin-top:-50.0%;
+		margin-left:15.5%;
 	}
 	.img3{
 		width: 105%;
@@ -92,54 +92,54 @@
 		object-fit: contain;
 	}
 	.big2{
-	text-transform:uppercase;
-	letter-spacing:0px;
-	color:#fbb83100;
-	font-family:Bahnschrift Condensed;
-	font-size:4.5vw;
+		text-transform:uppercase;
+		letter-spacing:0px;
+		color:#fbb83100;
+		font-family:Bahnschrift Condensed;
+		font-size:4.5vw;
 	}
 	.glavn2{
-	text-transform:uppercase;
-	letter-spacing:0%;
-	color:rgba(255, 255, 255, 0.1);
-	font-family:Bahnschrift Condensed;
-	font-size:1.8vw;
-	margin-top:-3%;
-	margin-left:3%;
+		text-transform:uppercase;
+		letter-spacing:0%;
+		color:rgba(255, 255, 255, 0.1);
+		font-family:Bahnschrift Condensed;
+		font-size:1.8vw;
+		margin-top:-3%;
+		margin-left:3%;
 	}
     i{
 	font-size:1.9vw;
 	}
 	.table1{
-	margin-top:1%;
-	margin-left:5%;
-	height:10%;
-	width:100%;
+		margin-top:1%;
+		margin-left:5%;
+		height:10%;
+		width:100%;
 	}
 	.table1 td{
-	padding : 20px;	
+		padding : 20px;	
 	}
 	.black1{
-	display: flex;	
-	height:100%;
-	width:105%;
-	background-color:black;
-	margin-left:-1%;
+		display: flex;	
+		height:100%;
+		width:105%;
+		background-color:black;
+		margin-left:-1%;
 	}	
 	.obed1{
-	width:50%;	
+		width:50%;	
 	}
 	.img5{
-	height:70vw;
-	padding:40px;
+		height:70vw;
+		padding:40px;
 	}
 	.stroki1{
-	line-height:2.5vw;
-	letter-spacing:0px;
-	color:#fff;
-	font-size:2.1vw;
-	width:70%;
-	margin-left:150px;
+		line-height:2.5vw;
+		letter-spacing:0px;
+		color:#fff;
+		font-size:2.1vw;
+		width:70%;
+		margin-left:150px;
 	}
 	.big1{
 		text-transform:uppercase;
@@ -153,46 +153,45 @@
 		width:50%;	
 	}
 	.img1{
-	box-shadow: 6px 9px 25px #77A;
-	width:35vw;
-
+		box-shadow: 6px 9px 25px #77A;
+		width:35vw;
 	}
 	.glavn{
-	text-transform:uppercase;
-	letter-spacing:0px;
-	color:#000;
-	font-family:Bahnschrift Condensed;
-	font-size:3.6vw;
+		text-transform:uppercase;
+		letter-spacing:0px;
+		color:#000;
+		font-family:Bahnschrift Condensed;
+		font-size:3.6vw;
 	}
 	.glavn3{
-	text-transform:uppercase;
-	letter-spacing:0px;
-	color:#000;
-	font-family:Bahnschrift Condensed;
-	font-size:3vw;
+		text-transform:uppercase;
+		letter-spacing:0px;
+		color:#000;
+		font-family:Bahnschrift Condensed;
+		font-size:3vw;
 	}	
 	.big{	
-	text-transform:uppercase;
-	letter-spacing:0px;
-	color:#fbb631;
-	font-family:Bahnschrift Condensed;
-	font-size:5vw;
-	margin-left:2%;
+		text-transform:uppercase;
+		letter-spacing:0px;
+		color:#fbb631;
+		font-family:Bahnschrift Condensed;
+		font-size:5vw;
+		margin-left:2%;
 	}
 	.all{
-	text-transform:uppercase;
-	letter-spacing:0px;
-	color:rgb(251, 184, 49, 0);
-	font-family:Bahnschrift Condensed;
-	font-size:5vw;
-	margin-top:5%;
-	padding-left:37%;
+		text-transform:uppercase;
+		letter-spacing:0px;
+		color:rgb(251, 184, 49, 0);
+		font-family:Bahnschrift Condensed;
+		font-size:5vw;
+		margin-top:5%;
+		padding-left:37%;
 	}
 	a{
-	text-decoration:none;	
+		text-decoration:none;	
 	}
 	a:link{ 
-    color:yellow;
+    		color:yellow;
 	}
 	a:visited{
 	color:yellow;
@@ -294,7 +293,7 @@
 			Z-index:1;
 		}
 		.img3 img{
-			  height: 700px;
+			  height: 100%;
 			  object-fit: cover;
 			  object-position: center;
 			  position: absolute;
