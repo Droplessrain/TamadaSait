@@ -299,8 +299,8 @@
 	#up{
 		cursor:pointer;
 		position: fixed;
-		right: 2%; 
-		top: 85%;
+		right: 30%; 
+		top: 65%;
 		padding: 1%;
 		font-size : 30%; 
 		transition: 1.3s;
