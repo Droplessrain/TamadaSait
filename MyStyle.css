@@ -294,8 +294,10 @@
 			position: relative;
 		}
 		.img3 img{
+			width:auto;
 			height: 500px;
 			object-position: center;
+			object-fit: cover;
 			  position: absolute;
 			  top: 0;
 			  left: 0;
