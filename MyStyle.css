@@ -293,7 +293,7 @@
 		}
 		.img3 img{
 			height:700px;
-			width:1400px;
+			min-width:1400px;
 			  object-fit: cover;
 			  object-position: center;
 			  position: absolute;
