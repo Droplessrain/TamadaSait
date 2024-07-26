@@ -336,11 +336,11 @@ height:15vw;
 .menu{
 	Z-index:2;
 	position: fixed;
-		right: 0px; 
-		top: 0%;
-		padding: 1%;
-		background: #000;
-		border: 0px;   
+	right: 0px; 
+	top: 0%;
+	padding: 1%;
+	background: #000;
+	border: 0px;   
 	font-size : 1.5vh; 
 	color : white;
 	width: 100%;
@@ -477,6 +477,67 @@ i{
 	display:flex;
 	width:90%;	
 }
+/*slider mobile*/
+.slider-container {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+  }
+  
+  .slider {
+	display: flex;
+	width: 300%;
+	transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider-item {
+	flex-basis: 33.33%;
+	position: relative;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  .slider-item img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 10px;
+  }
+  
+  .slider-controls {
+	position: absolute;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	background-color: transparent; /* Сделаем кнопки прозрачными */
+	cursor: pointer;
+  }
+  
+  .slider-controls.prev {
+	left: 0;
+  }
+  
+  .slider-controls.next {
+	right: 0;
+  }
+  
+  .slider-controls button {
+	background-color: transparent; /* Сделаем кнопки прозрачными */
+	color: #333;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+	opacity: 0.5; /* Сделаем кнопки полупрозрачными */
+	transition: opacity 0.3s ease;
+  }
+  
+  .slider-controls button:hover {
+	opacity: 1; /* Сделаем кнопки полностью видимыми при наведении */
+  }
+  /*slider mobile END*/
 .string{
 	width:90%;	
 }
@@ -491,66 +552,31 @@ img.imgInTable1:hover {
 	transform: rotate(0deg) scale(1.40);
 	transition: 1s;
 }
-
-/* Слайдер */
-.slider{
-max-width: 100%;
-position: relative;
-margin: auto;
-height: 300px;
-padding-bottom:40px;
-}
-.slider .item img {
-object-fit: cover;
-width: 100%;
-height: 400px;
-}
-.slider .previous, .slider .next {
-cursor: pointer;
-position: absolute;
-top: 50%;
-width: auto;
-margin-top: 0px;
-padding: 16px;
-color: white;
-font-weight: bold;
-font-size: 16px;
-transition: 0.6s ease;
-border-radius: 0 3px 3px 0;
-}
-.slider .next {
-right: 0;
-border-radius: 3px 0 0 3px;
-}
-.slider .previous:hover,
-.slider .next:hover {
-background-color: rgba(0, 0, 0, 0.2);
-}
 .w{
 width:10vw;
 }
 .rex{
-margin-top:-290px;
-margin-left:25vw;
-height:40vw;
+	margin-top:-290px;
+	margin-left:25vw;
+	height:40vw;
 }
 .zenu{
-display:flex;
-width:100%;
+	display:flex;
+	width:100%;
 }
 .zenuStr{
-width:100%;
-margin-left:-35px;
+	width:100%;
+	margin-left:-35px;
 }
 .end{
-width:100%;
-height:10vw;	
+	width:100%;
+	height:10vw;	
 }
 .glavn3{
-text-transform:uppercase;
-letter-spacing:0px;
-color:#000;
-font-family:Bahnschrift Condensed;
-font-size:6vw;
+	text-transform:uppercase;
+	letter-spacing:0px;
+	color:#000;
+	font-family:Bahnschrift Condensed;
+	font-size:6vw;
 }	
 }
