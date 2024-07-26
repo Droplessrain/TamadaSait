@@ -35,53 +35,6 @@
       <a href='https://vk.com/away.php?to=https%3A%2F%2Fm.ok.ru%2Fprofile%2F164437845093&cc_key=' class="odn"><img src='odn.png' class='odn'></a>
       <a href='https://t.me/+375291775131' class="tele"><img src='tele.png' class='tele'></a></div>
 
-    <script>
-	    let boxElement = document.querySelector('.glavn2');
-	    let animation = boxElement.animate([
-	      {transform: 'translate(150px, 0px)'},
-	      {color:'rgb(255, 255, 255)'}
-	    ], 1000);
-	    animation.addEventListener('finish', function() {
-	      boxElement.style.color = 'rgb(255, 255, 255, 1)';
-	    });
-	
-	    let big2 = document.querySelector('.big2');
-	    let animationbg2 = big2.animate([
-	      {transform: 'translate(-50px, 0px)'},
-	      {color:'rgb(255, 192, 4, 1)'}
-	    ], 1000);
-	    animationbg2.addEventListener('finish', function() {
-	      big2.style.color = '#fbb631';
-	    });
-
-      $(function() { 
-	 $(window).scroll(function() {
-	  if($(this).scrollTop() != 0) {
-	   $('#up').fadeIn(); 
-	  }
-	 else {
-	  $('#up').fadeOut();
-	  }
-	 });
-	$('#up').click(function() {
-	$('body,html').animate({scrollTop:0},800);
-	});
-	
-	const anchors = document.querySelectorAll('a[href*="#"]')
-	for (let anchor of anchors) {
-	  anchor.addEventListener('click', function (e) {
-	    e.preventDefault()
-	    const blockID = anchor.getAttribute('href').substr(1)
-	    document.getElementById(blockID).scrollIntoView({
-	      behavior: 'smooth',
-	      block: 'start'
-	    })
-	  })
-	}
-	});
-	    
-    </script>
-
     <br><div class='mistake'></div> <br>
     <br> <br>
     <br><div></div> <br>
@@ -323,6 +276,50 @@
     <tr><td><img src='end.png' class="end"></td></tr>
       </table>
       <div ID = 'up' class="up"><img src='up.png'></div>
-      <script type="text/javascript" src='index.js'></script>
+      <script>
+        $(document).ready(function() {
+        let boxElement = document.querySelector('.glavn2');
+        let animation = boxElement.animate([
+          { transform: 'translate(150px, 0px)' },
+          { color: 'rgb(255, 255, 255)' }
+        ], 1000);
+        animation.addEventListener('finish', function() {
+          boxElement.style.color = 'rgb(255, 255, 255, 1)';
+        });
+  
+        let big2 = document.querySelector('.big2');
+        let animationbg2 = big2.animate([
+          { transform: 'translate(-50px, 0px)' },
+          { color: 'rgb(255, 192, 4, 1)' }
+        ], 1000);
+        animationbg2.addEventListener('finish', function() {
+          big2.style.color = '#fbb631';
+        });
+  
+        $(window).scroll(function() {
+          if ($(this).scrollTop() != 0) {
+            $('#up').fadeIn();
+          } else {
+            $('#up').fadeOut();
+          }
+        });
+  
+        $('#up').click(function() {
+          $('body,html').animate({ scrollTop: 0 }, 800);
+        });
+  
+        const anchors = document.querySelectorAll('a[href*="#"]');
+        for (let anchor of anchors) {
+          anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const blockID = anchor.getAttribute('href').substr(1);
+            document.getElementById(blockID).scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          });
+        }
+      });
+      </script>
   </body>
 </html>
