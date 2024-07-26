@@ -182,40 +182,81 @@
             <div><img src='f4.JPG' class='imgInTable1' align='center'></div>
             <div><img src='f21.JPG' class='imgInTable1' align='center'></div>
           </div>
-      </div>  
+      </div>
+      
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slider-item">
+            <img src="1.JPG" alt="Изображение 1">
+            <div class="slider-controls prev" onclick="prevSlide()">
+              <button>&#10094;</button>
+            </div>
+            <div class="slider-controls next" onclick="nextSlide()">
+              <button>&#10095;</button>
+            </div>
+          </div>
+          <div class="slider-item">
+            <img src="f2.JPG" alt="Изображение 2">
+            <div class="slider-controls prev" onclick="prevSlide()">
+              <button>&#10094;</button>
+            </div>
+            <div class="slider-controls next" onclick="nextSlide()">
+              <button>&#10095;</button>
+            </div>
+          </div>
+          <div class="slider-item">
+            <img src="f12.JPG" alt="Изображение 3">
+            <div class="slider-controls prev" onclick="prevSlide()">
+              <button>&#10094;</button>
+            </div>
+            <div class="slider-controls next" onclick="nextSlide()">
+              <button>&#10095;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slider-item');
+        const slider = document.querySelector('.slider');
+        let startX = 0;
+        let endX = 0;
+
+        function prevSlide() {
+          currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+          updateSlider();
+        }
+
+        function nextSlide() {
+          currentSlide = (currentSlide + 1) % slides.length;
+          updateSlider();
+        }
+
+        function updateSlider() {
+          slider.style.transform = `translateX(-${currentSlide * 33.33}%)`;
+        }
+
+        slider.addEventListener('touchstart', (event) => {
+          startX = event.touches[0].clientX;
+        });
+
+        slider.addEventListener('touchmove', (event) => {
+          endX = event.touches[0].clientX;
+        });
+
+        slider.addEventListener('touchend', () => {
+          if (startX - endX > 50) {
+            nextSlide();
+          } else if (startX - endX < -50) {
+            prevSlide();
+          }
+        });
+      </script>
+
       <br>
       <br>
       <br>
       <br>
-      <!-- Основной блок слайдера -->
-    <div class="slider be">
-      <div class="item">
-        <img src="f21.JPG">
-      </div>
-      <div class="item">
-        <img src="f2.JPG">
-      </div>
-      <div class="item">
-        <img src="f12.JPG">
-      </div>
-      <div class="item">
-        <img src="f17.JPG">
-      </div>
-      <div class="item">
-        <img src="f5.JPG">
-      </div>
-      <div class="item">
-        <img src="f16.JPG">
-      </div>
-      <div class="item">
-        <img src="f7.JPG">
-      </div>
-      <div class="item">
-        <img src="f8.JPG">
-      </div>
-      <a class="previous" onclick="previousSlide()">&#10094;</a>
-      <a class="next" onclick="nextSlide()">&#10095;</a>
-    </div>
       <br>
       <br>
       <br>
