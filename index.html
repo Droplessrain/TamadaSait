@@ -188,28 +188,28 @@
         <div class="slider">
           <div class="slider-item">
             <img src="1.JPG" alt="Изображение 1">
-            <div class="slider-controls prev" onclick="prevSlide()">
+            <div class="slider-controls prev">
               <button>&#10094;</button>
             </div>
-            <div class="slider-controls next" onclick="nextSlide()">
+            <div class="slider-controls next">
               <button>&#10095;</button>
             </div>
           </div>
           <div class="slider-item">
             <img src="f2.JPG" alt="Изображение 2">
-            <div class="slider-controls prev" onclick="prevSlide()">
+            <div class="slider-controls prev">
               <button>&#10094;</button>
             </div>
-            <div class="slider-controls next" onclick="nextSlide()">
+            <div class="slider-controls next">
               <button>&#10095;</button>
             </div>
           </div>
           <div class="slider-item">
             <img src="f12.JPG" alt="Изображение 3">
-            <div class="slider-controls prev" onclick="prevSlide()">
+            <div class="slider-controls prev">
               <button>&#10094;</button>
             </div>
-            <div class="slider-controls next" onclick="nextSlide()">
+            <div class="slider-controls next">
               <button>&#10095;</button>
             </div>
           </div>
@@ -221,34 +221,48 @@
         const slider = document.querySelector('.slider');
         let startX = 0;
         let endX = 0;
-
+    
+        const prevButton = document.querySelectorAll('.slider-controls.prev button');
+        const nextButton = document.querySelectorAll('.slider-controls.next button');
+    
+        prevButton.forEach((button) => {
+          button.addEventListener('click', prevSlide);
+        });
+    
+        nextButton.forEach((button) => {
+          button.addEventListener('click', nextSlide);
+        });
+    
         function prevSlide() {
           currentSlide = (currentSlide - 1 + slides.length) % slides.length;
           updateSlider();
         }
-
+    
         function nextSlide() {
           currentSlide = (currentSlide + 1) % slides.length;
           updateSlider();
         }
-
+    
         function updateSlider() {
-          slider.style.transform = `translateX(-${currentSlide * 33.33}%)`;
+          requestAnimationFrame(() => {
+            slider.style.transform = `translateX(-${currentSlide * 33}%)`;
+          });
         }
-
+    
         slider.addEventListener('touchstart', (event) => {
           startX = event.touches[0].clientX;
         });
-
+    
         slider.addEventListener('touchmove', (event) => {
           endX = event.touches[0].clientX;
         });
-
+    
         slider.addEventListener('touchend', () => {
-          if (startX - endX > 50) {
-            nextSlide();
-          } else if (startX - endX < -50) {
+          const swipeDistance = startX - endX;
+          if (swipeDistance < -50) {
             prevSlide();
+          } else if (swipeDistance > 50) {
+            nextSlide();
           }
         });
       </script>
