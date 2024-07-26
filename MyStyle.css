@@ -14,9 +14,9 @@ body {background-color:#ffF}
 	right: 0px; 
 	top: 0%;
 	padding-top: 0.5%;
-		padding-bottom:1.4%;
-	   background: #000; 
-	   border: 0px;   
+	padding-bottom:1.4%;
+	background: #000; 
+	border: 0px;   
 	font-size : 1.5vw; 
 	color : white;
 	width: 100%;
@@ -87,6 +87,7 @@ body {background-color:#ffF}
 	z-index: 2;
 }
 .img3{
+	margin-left: -1vw;
 	width: 105%;
 	height: 50vw;
 	overflow: hidden;
@@ -120,7 +121,7 @@ font-size:1.9vw;
 	width:100%;
 }
 .table1 td{
-	padding : 20px;	
+	padding : 2vw;	
 }
 .black1{
 	display: flex;	
@@ -291,10 +292,11 @@ height:15vw;
 		}
 	.img3{
 		margin-left: -3%;
-		  width: 110%;
-		  height: 190vw;
-		  overflow: hidden;
-		  position: relative;
+		width: 110%;
+		height: 190vw;
+		max-height: 700px;
+		overflow: hidden;
+		position: relative;
 		Z-index:1;
 		background-position: calc(39%) calc(10%);
 		background-image: url('f13.JPG');
@@ -340,7 +342,7 @@ height:15vw;
 	padding: 1%;
 	background: #000;
 	border: 0px;   
-	font-size : 2vh; 
+	font-size : 4vw; 
 	color : white;
 	width: 100%;
 	max-width:100%;
