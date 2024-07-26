@@ -479,63 +479,48 @@ i{
 }
 /*slider mobile*/
 .slider-container {
-	position: relative;
 	width: 100%;
 	overflow: hidden;
   }
-  
+
   .slider {
 	display: flex;
 	width: 300%;
 	transition: transform 0.5s ease-in-out;
   }
-  
+
   .slider-item {
-	flex-basis: 33.33%;
+	flex: 1;
 	position: relative;
-	padding: 20px;
-	text-align: center;
   }
-  
+
   .slider-item img {
-	max-width: 100%;
+	width: 100%;
 	height: auto;
-	border-radius: 10px;
   }
-  
+
   .slider-controls {
 	position: absolute;
-	top: 0;
-	width: 50%;
 	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	z-index: 1;
-	background-color: transparent; /* Сделаем кнопки прозрачными */
-	cursor: pointer;
-  }
-  
-  .slider-controls.prev {
-	left: 0;
-  }
-  
-  .slider-controls.next {
-	right: 0;
-  }
-  
-  .slider-controls button {
-	background-color: transparent; /* Сделаем кнопки прозрачными */
-	color: #333;
-	border: none;
+	width:50%;
+	transform: translateY(-100%);
 	font-size: 24px;
 	cursor: pointer;
-	opacity: 0.5; /* Сделаем кнопки полупрозрачными */
-	transition: opacity 0.3s ease;
   }
-  
-  .slider-controls button:hover {
-	opacity: 1; /* Сделаем кнопки полностью видимыми при наведении */
+
+  .slider-controls button{
+	background-color: rgba(255, 255, 255, 0.1);
+	height: 100%;
+	width:100%;
+	border: none;
+  }
+
+  .slider-controls.prev {
+	left: 0px;
+  }
+
+  .slider-controls.next {
+	right: 0px;
   }
   /*slider mobile END*/
 .string{
