@@ -268,7 +268,29 @@ height:15vw;
 	margin-bottom: 5px;
 	font-weight: bold;
   }
-  
+  .currency-selector {
+	margin-bottom: 10px;
+}
+
+.currency-selector label {
+	margin-right: 10px;
+}
+
+.currency-selector select {
+	padding: 5px;
+	font-size: 14px;
+	border: 2px solid transparent;
+	border-radius: 4px;
+	background: linear-gradient(white, white), linear-gradient(90deg, yellow, orange);
+	background-clip: padding-box, border-box;
+	border-image: linear-gradient(90deg, yellow, orange) 1;
+	cursor: pointer;
+	transition: border-color 0.3s;
+}
+
+.currency-selector select:hover {
+	border-color: yellow;
+}
   
 
 
